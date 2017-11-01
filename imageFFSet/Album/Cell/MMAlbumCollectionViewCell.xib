@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MMAlbumCollectionViewCell" id="gTV-IL-0wX" customClass="MMAlbumCollectionViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="roI-xR-7qa">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TK4-ZF-iFi">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="TK4-ZF-iFi" secondAttribute="bottom" id="3IE-Tj-If1"/>
+                            <constraint firstAttribute="trailing" secondItem="TK4-ZF-iFi" secondAttribute="trailing" id="K7h-Tq-qtQ"/>
+                            <constraint firstItem="TK4-ZF-iFi" firstAttribute="top" secondItem="roI-xR-7qa" secondAttribute="top" id="TKf-qI-10y"/>
+                            <constraint firstItem="TK4-ZF-iFi" firstAttribute="leading" secondItem="roI-xR-7qa" secondAttribute="leading" id="nvc-D5-TrC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="roI-xR-7qa" secondAttribute="bottom" id="2Sg-ZN-r8W"/>
+                <constraint firstItem="roI-xR-7qa" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="NRA-Fa-owu"/>
+                <constraint firstAttribute="trailing" secondItem="roI-xR-7qa" secondAttribute="trailing" id="hNk-Bd-ySO"/>
+                <constraint firstItem="roI-xR-7qa" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pi9-r3-Skx"/>
+            </constraints>
+            <connections>
+                <outlet property="albumImageView" destination="TK4-ZF-iFi" id="LqB-GM-rCO"/>
+                <outlet property="alphaView" destination="roI-xR-7qa" id="9On-Di-CjW"/>
+            </connections>
+            <point key="canvasLocation" x="-609" y="-166"/>
+        </collectionViewCell>
+    </objects>
+</document>
